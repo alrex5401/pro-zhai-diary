@@ -1,0 +1,8 @@
+# 冗餘第二層防護：敏感製作素材永不進 repo（白名單 cp 是第一層）
+*sensitive*
+*SOP*
+*.bak*
+*.bak-*
+.state
+*.md
+.DS_Store
