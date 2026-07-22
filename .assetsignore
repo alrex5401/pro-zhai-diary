@@ -1,0 +1,24 @@
+# Cloudflare Workers static assets 排除清單（遷移自 GitHub Pages）
+# Workers 逐檔上傳、不像 Jekyll 會藏底線目錄或非網站檔 → 明確排除
+
+# 基礎設施檔（非網站內容）
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+CNAME
+.nojekyll
+.DS_Store
+**/.DS_Store
+
+# 社群分享卡匯出檔（Instagram 版、無任何 HTML 引用、約 4.6MB）→ 不對外服務
+# 網站實際引用的是 *-li.png（LINE 版、含 og:image）＋ avatar.png / brand-watermark.png
+*-ig.png
+
+# 隱私縱深第二層（對齊 .gitignore：敏感製作素材永不對外服務）
+*.md
+*SOP*
+*sensitive*
+*.bak
+*.bak-*
+.state
